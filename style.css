@@ -1,13 +1,11 @@
 
 
-.hidden-container:active .hidden {
+.hidden-container{
+    display: grid;
+}
+.hidden-container:active +span {
     display: inline;
     
-}
-
-.hidden-container:active .active {
-    display: none;
-
 }
 
 .hidden{
@@ -15,11 +13,12 @@
 
 }
 
-.active{
-    display: inline;
-}
-
 button{
     width:100px;
     height: 20px;
+    margin-left: 0.4em;
+}
+
+.container{
+    display: flex;
 }
